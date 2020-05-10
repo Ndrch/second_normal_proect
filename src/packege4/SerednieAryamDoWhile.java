@@ -2,6 +2,11 @@ package packege4;
 
 import java.util.Scanner;
 
+/**
+ * class seredne aryfmetychne chysel (typ double), vnesenyh korysruvachem, stop "."
+ * @author Bart
+ * 
+ */
 public class SerednieAryamDoWhile {
 
 	public static void main(String[] args) {
@@ -24,12 +29,21 @@ public class SerednieAryamDoWhile {
 		System.out.println("Serednie z " + kilkist + " chysel stanovyt: " + returnSerednie(suma, kilkist));
 
 	}
-
+	/**
+	 * metod peretvorjue tekstove povidomlenja v chyslo typu double 
+	 * @param vvedenja - zchytane tekstove povidomlennja
+	 * @return povertaje chyslo
+	 */
 	public static double returnChyslo(String vvedenja) {
 		double chyslo = Double.parseDouble(vvedenja);
 		return chyslo;
 	}
-
+	/**
+	 * metod znahodyt serednje aryfmetychne vvedenyh korystuvachem chysel
+	 * @param suma - suma vvedenyh korystuvachem chysel
+	 * @param kilkist - kilkist vvedenyh korystuvachem chysel
+	 * @return serednje aryfmetychne
+	 */
 	public static double returnSerednie(double suma, int kilkist) {
 		double serednie = suma / kilkist;
 		return serednie;
